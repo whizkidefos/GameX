@@ -21,3 +21,14 @@ for (let i = 0; i < navElemArr.length; i++) {
         toggleElement(overlay);
     });
 }
+
+// Go Top
+const goTopBtn = document.querySelector('[data-go-top]');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= 800) {
+        goTopBtn.classList.add('active');
+    } else {
+        goTopBtn.classList.remove('active');
+    }
+});
